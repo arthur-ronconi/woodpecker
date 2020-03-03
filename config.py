@@ -1,9 +1,9 @@
 ### VARIABLES ###
-search = 'gatos'
-actionCount = 1000
-timeBetweenActions = 3
+search = 'woodpecker'     ## TERM TO SEARCH
+actionCount = 10          ## NUMBER OF ACTIONS TO EXECUTE (LIKES AND/OR REWTWEETS)
+timeBetweenActions = 5    ## IN SECONDS
 
-### LOG MESSAGES ###
+### LOG MESSAGES (SO YOU KNOW ITS WORKING) ###
 likeLogMessage = 'Liked a tweet'
 retweetLogMessage = 'Retweeted a tweet'
 stopIterationMessage = 'Iteration stopped'
@@ -18,4 +18,4 @@ enableLikes = True
 enableRetweets = True
 
 
-print("LOADED CONFIG")
+print("LOADED CONFIGS")
