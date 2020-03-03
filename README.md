@@ -5,7 +5,7 @@ World's best Twitter bot. Or not.
 Once you run `app.py`, Woodpecker look for tweets that contain the terms you choose and interact with them (like and/or retweet).
 
 ## Instructions:
-**1.** Add your Twitter API keys to `access.py`;
+**1.** Add your Twitter API keys to `access.py`. (If you don't have API keys, get them at [developer.twitter.com](https://developer.twitter.com));
 
 **2.** Set your variables in `config.py`. You can set a search term, a number of actions to execute, log messages and enable likes and retweets;
 
