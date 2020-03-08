@@ -14,14 +14,17 @@ class likeRetweet:
         self.timeBetweenActions = timeBetweenActions
         api = auth.api
         for tweet in tweepy.Cursor(api.search, search).items(actionCount):
+            name = tweet.user.name
+            username = "@" + tweet.user.screen_name
+
             def likeTweet():
                 tweet.favorite()
-                print(likeLogMessage)
+                print(likeLogMessage + " from " + name + " - " + username)
                 time.sleep(timeBetweenActions)
 
             def retweetTweet():
                 tweet.retweet()
-                print(retweetLogMessage)
+                print(retweetLogMessage + " from " + name + " - " + username)
                 time.sleep(timeBetweenActions)
             try:
                 if config.enableLikes and config.enableRetweets:
