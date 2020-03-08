@@ -10,3 +10,6 @@ def run():
     print(config.actionCountLogMessage)
     functions.likeRetweet(config.search, config.actionCount, config.likeLogMessage,
                           config.retweetLogMessage, config.timeBetweenActions)
+
+
+run()
