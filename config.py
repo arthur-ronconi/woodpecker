@@ -1,7 +1,7 @@
 ### VARIABLES ###
-search = 'woodpecker'     ## TERM TO SEARCH
-actionCount = 10          ## NUMBER OF ACTIONS TO EXECUTE (LIKES AND/OR REWTWEETS)
-timeBetweenActions = 5    ## IN SECONDS
+search = 'gatos'  # TERM TO SEARCH
+actionCount = 10  # NUMBER OF ACTIONS TO EXECUTE (LIKES AND/OR REWTWEETS)
+timeBetweenActions = 5  # IN SECONDS
 
 ### LOG MESSAGES (SO YOU KNOW ITS WORKING) ###
 likeLogMessage = 'Liked a tweet'
