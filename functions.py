@@ -21,18 +21,20 @@ class likeRetweet:
 
             def likeTweet():
                 tweet.favorite()
-                print(likeLogMessage + " from " + name + " - " + username)
+                print(likeLogMessage + " from " +
+                      name + " - " + username + '\n')
                 time.sleep(config.timeBetweenActions)
 
             def retweetTweet():
                 tweet.retweet()
-                print(retweetLogMessage + " from " + name + " - " + username)
+                print(retweetLogMessage + " from " +
+                      name + " - " + username + '\n')
                 time.sleep(config.timeBetweenActions)
             try:
                 if config.enableLikes and config.enableRetweets:
                     likeTweet()
                     retweetTweet()
-                    print("\n" + msg + "\n")
+                    print(msg + "\n")
 
                 elif config.enableLikes == True and config.enableRetweets == False:
                     likeTweet()
@@ -67,4 +69,4 @@ class meow:
             text.append(meow.meowGen())
         catTweet = ''.join(text)
         api.update_status(catTweet)
-        print('Published a tweet: \n'+catTweet)
+        print('Published a tweet: \n'+catTweet+'\n')
