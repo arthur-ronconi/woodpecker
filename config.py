@@ -1,7 +1,8 @@
 ### VARIABLES ###
-search = 'gatos'  # TERM TO SEARCH
+search = 'gatinho'  # TERM TO SEARCH
 actionCount = 1000  # NUMBER OF ACTIONS TO EXECUTE (LIKES AND/OR REWTWEETS)
-timeBetweenActions = 300  # IN SECONDS
+timeBetweenActions = 300  # IN SECONDS (PLACEHOLDER: 5MIN)
+timeBetweenTweets = 1800  # IN SECONDS (PLACEHOLDER: 30MIN)
 
 ### LOG MESSAGES (SO YOU KNOW ITS WORKING) ###
 likeLogMessage = 'Liked a tweet'

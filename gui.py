@@ -1,5 +1,5 @@
 import tkinter as tk
-import app
+import likert
 import config
 
 

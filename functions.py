@@ -2,6 +2,7 @@ import tweepy
 import time
 import config
 import auth
+import random
 
 
 class likeRetweet:
@@ -44,3 +45,25 @@ class likeRetweet:
             except StopIteration:
                 print(config.stopIterationMessage)
                 break
+
+
+class meow:
+    def __init__(self):
+        api = auth.api
+        self.api = api
+
+    def meowGen():
+        rn = random.randrange(1, 8)
+        letters = 'a' * rn
+        meow = 'mi' + letters + 'u '
+        return meow
+
+    def twt():
+        api = auth.api
+        rn = random.randrange(1, 8)
+        text = []
+        for i in range(rn):
+            text.append(meow.meowGen())
+        catTweet = ''.join(text)
+        api.update_status(catTweet)
+        print('Published a tweet: \n'+catTweet)

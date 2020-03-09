@@ -5,11 +5,12 @@ from auth import api
 import functions
 
 
-def run():
-    print(config.searchLogMessage)
-    print(config.actionCountLogMessage)
+def likert():
+
+    # print(config.searchLogMessage)
+    # print(config.actionCountLogMessage)
     functions.likeRetweet(config.search, config.actionCount, config.likeLogMessage,
                           config.retweetLogMessage, config.timeBetweenActions)
 
 
-run()
+# likert()
