@@ -16,7 +16,7 @@ allDisabledMsg = '[ERROR] All options are disabled!'
 
 ### OPTIONS ###
 enableLikes = True
-enableRetweets = True
+enableRetweets = False
 
 
 print("LOADED CONFIGS")
