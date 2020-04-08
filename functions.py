@@ -23,18 +23,21 @@ class likeRetweet:
                 tweet.favorite()
                 print(likeLogMessage + " from " +
                       name + " - " + username + '\n')
+                print(msg + "\n")
+
                 time.sleep(config.timeBetweenActions)
 
             def retweetTweet():
                 tweet.retweet()
                 print(retweetLogMessage + " from " +
                       name + " - " + username + '\n')
+                print(msg + "\n")
+                
                 time.sleep(config.timeBetweenActions)
             try:
                 if config.enableLikes and config.enableRetweets:
                     likeTweet()
                     retweetTweet()
-                    print(msg + "\n")
 
                 elif config.enableLikes == True and config.enableRetweets == False:
                     likeTweet()
