@@ -3,6 +3,7 @@ import time
 import config
 import auth
 import random
+import os
 
 
 class likeRetweet:
@@ -58,6 +59,14 @@ class meow:
         api = auth.api
         self.api = api
 
+    def uploadPhoto():
+        api = auth.api
+        path = os.getcwd()
+        files = os.listdir(path + '/img')
+        rn = random.randrange(0, len(files) + 1)
+        media = api.media_upload(path + '/img/' + files[rn]).media_id
+        return media
+
     def meowGen():
         rn = random.randrange(1, 8)
         letters = 'a' * rn
@@ -71,5 +80,6 @@ class meow:
         for i in range(rn):
             text.append(meow.meowGen())
         catTweet = ''.join(text)
-        api.update_status(catTweet)
-        print('Published a tweet: \n'+catTweet+'\n')
+        api.update_status(catTweet, media_ids=[meow.uploadPhoto()])
+        print('Published a tweet: \n' + catTweet + '\n')
+        
